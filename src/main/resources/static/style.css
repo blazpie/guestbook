@@ -1,0 +1,66 @@
+div.main {
+    border: solid black 2pt;
+    border-radius: 5pt;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+div.header {
+    background: gainsboro;
+}
+
+p {
+    font-size: small;
+    margin: 1pt;
+}
+
+div.main h1 {
+    font-size: 350%;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-end;
+    height: auto;
+}
+
+input {
+    align-self: center;
+    margin-bottom: 2pt;
+    width: 30%;
+}
+
+
+input.button {
+    width: auto;
+}
+
+
+textarea {
+    align-self: center;
+    width: 30%;
+}
+
+div.entry {
+    width: 50%;
+    align-self: center;
+    border: solid black 1pt;
+    border-radius: 2pt;
+    margin-bottom: 2pt;
+    text-align: center;
+    word-break: normal;
+}
+
+div.guest_lists {
+    width: inherit;
+    background: bisque;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 2pt;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    <h1>The best guestbook in internet</h1>
+    <form method="POST">
+        <p>Your name:</p>
+        <input class="author" name="author" type="text">
+        <p>Your message:</p>
+        <textarea class="message" name="message" type="text" rows="10"></textarea>
+        <input class="button" value="Add me too please!" type="submit">
+    </form>
+    </div>
+    <div class="guest_lists">
+        {% for entry in entries %}
+            <div class="entry">
+                <h2>{{ entry[0] }}</h2>
+                <h3>{{ entry[1] }}</h3>
+                <h6>{{ entry[2] }}</h6>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>
